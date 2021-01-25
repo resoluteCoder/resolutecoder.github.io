@@ -1,0 +1,103 @@
+/* General style and setup */
+
+:root {
+    --primary-color: grey;
+    --secondary-color: black;
+    --accent-color: #444;
+}
+
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.page-title {
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    margin: 75px 0;
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    padding: 10px 25px;
+    letter-spacing: 1px;
+}
+
+#brand-name {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.nav-links, .nav-links:visited, .nav-links:active {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-links:hover {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+/* Footer Styles */
+
+
+footer {
+    background: #222;
+    color: white;
+    padding: 25px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.footer-info ul li {
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+}
+
+.footer-info p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-link, 
+.social-link:visited {
+    font-size: 40px;
+    color:white;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: 15px;
+    }
+  }

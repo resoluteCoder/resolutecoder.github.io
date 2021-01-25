@@ -1,0 +1,78 @@
+/* Page Variations */
+
+body {
+    margin: 10px;
+}
+
+nav {
+    border-bottom: 1px solid silver;
+}
+
+#brand-name {
+    color: #444;
+}
+
+footer { 
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+/* Contact Styles */
+
+
+@keyframes drop-it {
+    90% {
+        transform: translateY(800px);
+        opacity: 0;
+    }
+    /* a way to not have excess space  */
+    100% { 
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+
+form {
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s;
+    transition: opacity 1s;
+    color: #444;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 0 10px 5px;
+    font-family: inherit;
+}
+
+textarea { resize: none; }
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.dropped {
+    animation: drop-it linear forwards 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    form { width: 400px; }
+  }

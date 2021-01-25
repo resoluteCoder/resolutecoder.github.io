@@ -27,7 +27,6 @@ body, html {
 nav {
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-evenly; */
     padding: 10px 25px;
     letter-spacing: 1px;
 }
@@ -37,6 +36,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     color: var(--primary-color);
+}
+
+.small-brand {
+    display:none;
 }
 
 .nav-links, .nav-links:visited, .nav-links:active {
@@ -99,5 +102,13 @@ footer {
 @media screen and (max-width: 600px) {
     nav {
         font-size: 15px;
+        justify-content: space-evenly;
+    }
+
+    .small-brand {
+        display:inline-block;
+    }
+    .large-brand {
+        display:none;
     }
   }
